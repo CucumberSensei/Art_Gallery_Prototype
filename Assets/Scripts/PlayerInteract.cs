@@ -1,4 +1,5 @@
 using System;
+using StarterAssets;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
@@ -9,12 +10,11 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private float interactDistance = 2f;
     [SerializeField] private LayerMask paintingLayerMask;
     [SerializeField] private Painting selectedPainting;
-
-    public event EventHandler<OnSelectedPaintingChangeEventArgs> OnSelectedPaintingChange;
-    public class OnSelectedPaintingChangeEventArgs : EventArgs
-    {
-        public Painting selectedPainting;
-    }
+    [SerializeField] private bool isInteracting;
+    
+    public event EventHandler OnSelectedPaintingChange;
+    public event EventHandler OnInteracting; 
+    
 
     private void Awake()
     {
@@ -24,15 +24,19 @@ public class PlayerInteract : MonoBehaviour
         }
         Instance = this;
     }
-
+    
     private void Update()
     {   
         HandlePaintingSelection();
     }
     
     public void OnInteract()
-    {
-        Debug.Log("Interact");
+    {   
+        if (selectedPainting != null)
+        {   
+            isInteracting = !isInteracting;
+            OnInteracting?.Invoke(this, EventArgs.Empty);
+        }
     }
 
     private void HandlePaintingSelection()
@@ -59,9 +63,16 @@ public class PlayerInteract : MonoBehaviour
     private void SetSelectedPainting(Painting painting)
     {
         selectedPainting = painting;
-        OnSelectedPaintingChange?.Invoke(this, new OnSelectedPaintingChangeEventArgs
-        {
-            selectedPainting = painting
-        });
+        OnSelectedPaintingChange?.Invoke(this, EventArgs.Empty);
+    }
+
+    public Painting GetSelectedPainting()
+    {
+        return selectedPainting;
+    }
+
+    public bool IsInteracting()
+    {
+        return isInteracting;
     }
 }

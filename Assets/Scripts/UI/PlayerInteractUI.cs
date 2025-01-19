@@ -1,4 +1,5 @@
 using System;
+using StarterAssets;
 using UnityEngine;
 
 namespace UI
@@ -11,9 +12,9 @@ namespace UI
             PlayerInteract.Instance.OnSelectedPaintingChange += Instance_OnSelectedPaintingChange;
         }
 
-        private void Instance_OnSelectedPaintingChange(object sender, PlayerInteract.OnSelectedPaintingChangeEventArgs e)
+        private void Instance_OnSelectedPaintingChange(object sender, EventArgs e)
         {
-            if (e.selectedPainting != null)
+            if (PlayerInteract.Instance.GetSelectedPainting())
             {
                 ShowInteractLabel();
             }
