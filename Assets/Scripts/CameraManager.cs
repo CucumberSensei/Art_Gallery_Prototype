@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using Cinemachine;
-using UnityEngine.Serialization;
 
 public class CameraManager : MonoBehaviour
 {

@@ -1,5 +1,4 @@
 using System;
-using StarterAssets;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
@@ -46,7 +45,7 @@ public class PlayerInteract : MonoBehaviour
         {
             
             
-            if (hit.transform.TryGetComponent<Painting>(out Painting painting))
+            if (hit.transform.TryGetComponent(out Painting painting))
             {
                 if (selectedPainting != painting)
                 {
