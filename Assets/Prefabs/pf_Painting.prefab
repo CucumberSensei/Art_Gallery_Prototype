@@ -25,13 +25,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967068122319155862}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7315004831229616394}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -335,12 +335,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactCameraFollowTransform: {fileID: 6295404427914022930}
   interactCameraLookAtTransform: {fileID: 1998235707132324710}
+  prefabID: 0
   paintingInfo:
-    imageBase64: 
-    name: 
+    id: 0
+    image: 
+    title: 
     author: 
     year: 0
     description: 
+  paintingImage: {fileID: 8624869929014256210}
 --- !u!1 &6939597284508999207
 GameObject:
   m_ObjectHideFlags: 0
