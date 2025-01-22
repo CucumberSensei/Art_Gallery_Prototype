@@ -11,8 +11,9 @@ public class GalleryManager : MonoBehaviour
     private string jsonFilePath = Application.dataPath + "/GalleryData/paintings.json";
 
     private void Awake()
-    {
-       LoadGalleryData();
+    { 
+        Application.targetFrameRate = 60;
+        LoadGalleryData();
     }
 
     private void Start()
@@ -22,7 +23,7 @@ public class GalleryManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             LoadPaintingsTexture();
         }

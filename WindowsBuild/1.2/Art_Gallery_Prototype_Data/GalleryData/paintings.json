@@ -1,0 +1,84 @@
+{
+    "paintings": [
+        {
+            "id": 1,
+            "image": "image1.jpg",
+            "title": "La Noche Estrellada",
+            "author": "Vincent van Gogh",
+            "year": 1889,
+            "description": "Una de las pinturas más conocidas del arte occidental."
+        },
+        {
+            "id": 2,
+            "image": "image2.jpg",
+            "title": "Mona Lisa",
+            "author": "Leonardo da Vinci",
+            "year": 1503,
+            "description": "Una obra maestra del Renacimiento italiano."
+        },
+        {
+            "id": 3,
+            "image": "image3.jpg",
+            "title": "Mona Lisa3",
+            "author": "Leonardo da Vinci",
+            "year": 1503,
+            "description": "Una obra maestra del Renacimiento italiano."
+        },
+        {
+            "id": 4,
+            "image": "image4.jpg",
+            "title": "Mona Lisa4",
+            "author": "Leonardo da Vinci",
+            "year": 1503,
+            "description": "Una obra maestra del Renacimiento italiano."
+        },
+        {
+            "id": 5,
+            "image": "image5.jpg",
+            "title": "Mona Lisa5",
+            "author": "Leonardo da Vinci",
+            "year": 1503,
+            "description": "Una obra maestra del Renacimiento italiano."
+        },
+        {
+            "id": 6,
+            "image": "image6.jpg",
+            "title": "Mona Lisa6",
+            "author": "Leonardo da Vinci",
+            "year": 1503,
+            "description": "Una obra maestra del Renacimiento italiano."
+        },
+        {
+            "id": 7,
+            "image": "image7.jpg",
+            "title": "Mona Lisa7",
+            "author": "Leonardo da Vinci",
+            "year": 1503,
+            "description": "Una obra maestra del Renacimiento italiano."
+        },
+        {
+            "id": 8,
+            "image": "image8.jpg",
+            "title": "Mona Lisa8",
+            "author": "Leonardo da Vinci",
+            "year": 1503,
+            "description": "Una obra maestra del Renacimiento italiano."
+        },
+        {
+            "id": 9,
+            "image": "image9.jpg",
+            "title": "Mona Lisa9",
+            "author": "Leonardo da Vinci",
+            "year": 1503,
+            "description": "Una obra maestra del Renacimiento italiano."
+        },
+        {
+            "id": 10,
+            "image": "image10.jpg",
+            "title": "Mona Lisa10",
+            "author": "Leonardo da Vinci",
+            "year": 1503,
+            "description": "Una obra maestra del Renacimiento italiano."
+        }
+    ]
+}
