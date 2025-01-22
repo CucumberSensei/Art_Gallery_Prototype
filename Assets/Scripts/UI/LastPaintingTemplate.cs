@@ -16,6 +16,5 @@ namespace UI
             titleText.text = painting.paintingInfo.title;
             authorText.text = painting.paintingInfo.author;
         }
-        
     }
 }
